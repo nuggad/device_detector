@@ -33,20 +33,26 @@ describe DeviceDetector do
                 assert_equal f["os_family"], os.family, "failed os family detection"
                 assert_equal f["os"]["name"], os.name, "failed os name detection"
                 assert_equal f["os"]["short_name"], os.short_name, "failed os short name detection"
-                assert_equal f["os"]["version"], os.full_version, "failed os version detection"
+                if f["os"]["version"].nil?
+                  assert_nil os.full_version, "failed os version detection"
+                else
+                  assert_equal f["os"]["version"], os.full_version, "failed os version detection"
+                end
               end
               if f["device"]
                 expected_type = f["device"]["type"]
                 actual_type = detector.device_type
-                if expected_type != actual_type
-                  # puts "\n", f.inspect, expected_type, actual_type, detector.device_name, regex_meta.inspect
-                  # debugger
-                  # detector.device_type
+                if expected_type.nil?
+                  assert_nil actual_type, "failed device type detection"
+                else
+                  assert_equal expected_type, actual_type, "failed device type detection"
                 end
-                assert_equal expected_type, actual_type, "failed device type detection"
                 model = f["device"]["model"]
-                model = model.to_s unless model.nil?
-                assert_equal model, detector.device_name, "failed device name detection"
+                if model.nil?
+                  assert_nil detector.device_name, "failed device name detection"
+                else
+                  assert_equal model.to_s, detector.device_name, "failed device name detection"
+                end
               end
             end
           end
