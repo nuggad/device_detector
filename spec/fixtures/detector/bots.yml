@@ -145,8 +145,8 @@
     category: Crawler
     url: http://law.di.unimi.it/BUbiNG.html
     producer:
-      name:
-      url:
+      name: The Laboratory for Web Algorithmics (LAW)
+      url: 'http://law.di.unimi.it/software.php#buging'
 - 
   user_agent: Backlink-Check.de (+http://www.backlink-check.de/bot.html)
   bot:
@@ -309,6 +309,15 @@
     producer:
       name: Microsoft Corporation
       url: http://www.microsoft.com
+- 
+  user_agent: bitlybot/3.0
+  bot:
+    name: BitlyBot
+    category: Crawler
+    url: https://bitly.com
+    producer:
+      name: Bitly, Inc.
+      url: https://bitly.com
 - 
   user_agent: Mozilla/5.0 (compatible; Blekkobot; ScoutJet; +http://blekko.com/about/blekkobot)
   bot:
@@ -731,6 +740,15 @@
       name: Genieo
       url: http://www.genieo.com
 - 
+  user_agent: GigablastOpenSource/1.0
+  bot:
+    name: Gigablast
+    category: Search bot
+    url: https://github.com/gigablast/open-source-search-engine
+    producer:
+      name: Matt Wells
+      url: http://www.gigablast.com/faq.html
+- 
   user_agent: Mozilla/5.0 (compatible; Gluten Free Crawler/1.0; +http://glutenfreepleasure.com/)
   bot:
     name: Gluten Free Crawler
@@ -831,6 +849,15 @@
       url: http://www.google.com
 - 
   user_agent: Feedfetcher-Google; (+http://www.google.com/feedfetcher.html; 375 subscribers; feed-id=15381863289700640853)
+  bot:
+    name: Googlebot
+    category: Search bot
+    url: http://www.google.com/bot.html
+    producer:
+      name: Google Inc.
+      url: http://www.google.com
+- 
+  user_agent: Google-Adwords-Instant (+http://www.google.com/adsbot.html)
   bot:
     name: Googlebot
     category: Search bot
@@ -957,6 +984,15 @@
       url: http://www.google.com
 - 
   user_agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; Google Web Preview) Chrome/27.0.1453 Safari/537.36
+  bot:
+    name: Googlebot
+    category: Search bot
+    url: http://www.google.com/bot.html
+    producer:
+      name: Google Inc.
+      url: http://www.google.com
+- 
+  user_agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36 (compatible; Google-Shopping-Quality +http://www.google.com/merchants/tos/extend/DE/tos.html)
   bot:
     name: Googlebot
     category: Search bot
@@ -1108,6 +1144,15 @@
     producer:
       name: Microsoft Corporation
       url: http://www.microsoft.com
+- 
+  user_agent: IP-Guide.com Crawler/1.0 (https://ip-guide.com)
+  bot:
+    name: IP-Guide Crawler
+    category: Crawler
+    url:
+    producer:
+      name:
+      url: https://ip-guide.com
 - 
   user_agent: kouio.com RSS reader
   bot:
@@ -1337,6 +1382,15 @@
       name: Netcraft
       url: http://www.netcraft.com
 - 
+  user_agent: Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)
+  bot:
+    name: Netcraft Survey Bot
+    category: Search bot
+    url:
+    producer:
+      name: Netcraft
+      url: http://www.netcraft.com
+- 
   user_agent: 'Netcraft SSL Server Survey - contact info@netcraft.com'
   bot:
     name: Netcraft Survey Bot
@@ -1408,6 +1462,15 @@
     producer:
       name:
       url:
+- 
+  user_agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+  bot:
+    name: Nmap
+    category: Security Checker
+    url: https://nmap.org/book/nse.html
+    producer:
+      name: Nmap
+      url: https://nmap.org/
 - 
   user_agent: 5acd734a-1ed3-4a17-ad9d-0b09ae7bc2d2/Nutch-1.7
   bot:
@@ -1826,6 +1889,12 @@
       name: Sensika
       url: http://sensika.com
 - 
+  user_agent: Mozilla/5.0 (compatible; seoscanners.net/1; +spider@seoscanners.net)
+  bot:
+    name: Seoscanners.net
+    category: Crawler
+    url:
+- 
   user_agent: Server Density Service Monitoring v2
   bot:
     name: Server Density
@@ -1838,7 +1907,16 @@
     producer:
       name: Seznam.cz, a.s.
       url: http://www.seznam.cz/
-- 
+-
+  user_agent: Mozilla/5.0 SeznamEmailProxy/2.0.174
+  bot:
+    name: Seznam Email Proxy
+    category: Crawler
+    url:
+    producer:
+      name: Seznam.cz, a.s.
+      url: http://www.seznam.cz/
+-
   user_agent: Mozilla/5.0 (compatible; SeznamBot/3.2-test1; +http://fulltext.sblog.cz/)
   bot:
     name: Seznam Bot
@@ -2069,6 +2147,15 @@
       name:
       url:
 - 
+  user_agent: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.0; trendictionbot0.5.0; trendiction search; http://www.trendiction.de/bot; please let us know of any problems; web at trendiction.com) Gecko/20071127 Firefox/3.0.0.11
+  bot:
+    name: Trendiction Bot
+    category: Crawler
+    url: http://www.trendiction.de/bot
+    producer:
+      name: Talkwalker Inc.
+      url: http://www.talkwalker.com
+- 
   user_agent: TurnitinBot/3.0 (http://www.turnitin.com/robot/crawlerinfo.html)
   bot:
     name: TurnitinBot
@@ -2140,6 +2227,24 @@
     producer:
       name: Uptime Robot
       url: http://uptimerobot.com
+- 
+  user_agent: Mozilla/5.0 (compatible; Uptimebot/1.0; +http://www.uptime.com/uptimebot)
+  bot:
+    name: Uptimebot
+    category: Site Monitor
+    url: https://uptime.com/uptimebot
+    producer:
+      name: Uptime
+      url: https://uptime.com
+- 
+  user_agent: 'Mozilla/4.0 (compatible;  Vagabondo/4.0; http://webagent.wise-guys.nl/; http://www.wise-guys.nl/)'
+  bot:
+    name: Vagabondo
+    category: Crawler
+    url:
+    producer:
+      name: WiseGuys
+      url: http://www.wise-guys.nl/
 - 
   user_agent: Mozilla/5.0 (compatible; VSMCrawler; http://www.visualsitemapper.com/crawler/)
   bot:
@@ -2646,3 +2751,9 @@
     producer:
       name: Robert Graham
       url: https://github.com/robertdavidgraham
+- 
+  user_agent: Mozilla/5.0 zgrab/0.x
+  bot:
+    name: zgrab
+    category: Security Checker
+    url: https://github.com/zmap/zgrab
